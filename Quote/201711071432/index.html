@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MyGirl</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="htmleaf-container">
+		<div class="banner" id="banner1" style="margin: 50px auto;">
+			<div class="banner-view"></div>
+			<div class="banner-btn"></div>
+			<div class="banner-number"></div>
+			<div class="banner-progres"></div>
+		</div>
+	</div>
+	
+	<a style="color: #fff; font-size: 32px; position: fixed; right: 100px; bottom: 100px;" href="../201803011459/index.html">Point me></a>	
+	
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript">
+		var banner = new FragmentBanner({
+			container : "#banner1",//选择容器 必选
+			imgs : ['../../MyGirl/WechatIMG1282.jpeg','../../MyGirl/WechatIMG1283.jpeg','../../MyGirl/WechatIMG1284.jpeg','../../MyGirl/WechatIMG1285.jpeg','../../MyGirl/WechatIMG1295.jpeg','../../MyGirl/WechatIMG1296.jpeg','../../MyGirl/WechatIMG1298.jpeg','../../MyGirl/WechatIMG1299.jpeg'],//图片集合 必选
+			size : {
+				width : 500,
+				height : 700
+			},//容器的大小 可选
+			//行数与列数 可选
+			grid : {
+				line : 12,
+				list : 14
+			},
+			index: 0,//图片集合的索引位置 可选
+			type : 2,//切换类型 1 ， 2 可选
+			boxTime : 4000,//小方块来回运动的时长 可选
+			fnTime : 6000//banner切换的时长 可选
+		});
+	</script>
+</body>
+</html>
